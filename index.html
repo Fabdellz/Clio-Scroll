@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clio</title>
+<meta name="description" content="Clio — a collection of poems, essays, and quotes.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#poetry">Poetry</a>
+    <a href="#essays">Essays</a>
+    <a href="#quotes">Papyrus</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <canvas id="starfield"></canvas>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Poems · Essays · Fragments</span>
+    <h1><em>Clio</em></h1>
+    <p class="tagline">"An infinite amount of worlds, but this is my favorite."</p>
+  </div>
+</header>
+
+<main>
+
+  <section class="section" id="poetry">
+    <div class="section-head">
+      <span class="section-number">I.</span>
+      <h2>Poetry</h2>
+      <p>Ten pieces, gathered under one sky.</p>
+    </div>
+    <div class="poem-list" id="poem-list"></div>
+  </section>
+
+  <section class="section" id="essays">
+    <div class="section-head">
+      <span class="section-number">II.</span>
+      <h2>Essays</h2>
+      <p>Longer thoughts, worked out in full.</p>
+    </div>
+    <div id="essay-list"></div>
+  </section>
+
+  <section class="section" id="quotes">
+    <div class="section-head">
+      <span class="section-number">III.</span>
+      <h2>Papyrus</h2>
+      <p>Fragments — short enough to carry with you.</p>
+    </div>
+    <div class="quote-grid" id="quote-grid"></div>
+  </section>
+
+</main>
+
+<footer>
+  Clio <span>&middot;</span> updated as it grows
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
